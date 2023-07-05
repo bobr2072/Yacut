@@ -9,7 +9,6 @@ from yacut.exceptions import APIRequestError
 from yacut.models import URLMap
 from yacut.utils import required_fields, save
 
-
 CUSTOM_ID_VALIDATORS = {
     lambda value: (len(value) > const.CUSTOM_ID_LENGTH): (const.INVALID_CUSTOM_ID),
 

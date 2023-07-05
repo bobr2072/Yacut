@@ -1,13 +1,9 @@
 from flask_wtf import FlaskForm
-from wtforms import URLField, SubmitField
-from wtforms.validators import DataRequired, Length, URL
-from wtforms.validators import (
-    DataRequired,
-    Length,
-    ValidationError,
-)
-from yacut.models import URLMap
+from wtforms import SubmitField, URLField
+from wtforms.validators import URL, DataRequired, Length, ValidationError
+
 from yacut import constants as const
+from yacut.models import URLMap
 
 
 class URLMapForm(FlaskForm):

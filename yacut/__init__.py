@@ -2,7 +2,6 @@ import sqlalchemy as sa
 from flask import Flask
 from flask_migrate import Migrate
 from flask_sqlalchemy import Model, SQLAlchemy
-
 from settings import Config
 
 app = Flask(__name__)
